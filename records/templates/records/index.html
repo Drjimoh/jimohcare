@@ -1,0 +1,15 @@
+{% if record_list %}
+
+<div>
+	{% for record in record_list %}
+	<p> {{ record.patient_id }} {{ record.patient_name }}</p>
+	{% endfor %}
+</div>
+
+{% else %}
+<div> 
+<p>
+	No records yet
+</p></div>
+
+{% endif %}
